@@ -1,0 +1,297 @@
+/* styles.css */
+
+/* Body Styles */
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit
+}
+body {
+    text-decoration-color: #fff ;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #eee7e1;
+    scroll-behavior: smooth;
+    height: 100vh; /* Set the height of the body to 100% of the viewport height */
+
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    height: 100%; /* Set the height of the html element to 100% */
+  }
+  
+  section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    border: 6px solid #fff;
+  }
+  
+/* section:nth-child(odd) {
+    background-image:url(Images/blurry-gradient-haikei\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+  section:nth-child(even) {
+    background-image:url(Images/blurry-gradient-haikei\ \(1\)transition.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */ */
+  
+  
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+  
+  /* Home Text Styles */
+  .homeText {
+    text-align: center;
+    font-size: 6rem;
+  }
+  
+  /* Description Text Styles */
+  .desText {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  /* Profile Image Styles */
+  .nav-profile-img {
+    width: 40px;
+    padding-left: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Header Styles */
+ 
+header {
+    height: 60px;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: all 0.2s ease;
+  }
+  
+  
+  /* Head Wrapper Styles */
+  .head_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Header Link Styles */
+  .head_wrapper a {
+    margin-left: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+  }
+  
+  /* Navigation List Item Styles */
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  /* Navigation Link Styles */
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 0 1.5rem;
+    font-size: 20px;
+    transition: all 0.2s ease;
+  }
+  
+  /* Unvisited Link Styles */
+  .nav-link:link {
+    color: #000000;
+  }
+  
+  /* Hover Link Styles */
+  .nav-link:hover {
+    color: #98CCFF;
+    transition: all 0.3s ease;
+  }
+  
+  /* Active Link Styles */
+  .nav-link:active {
+    color:#98CCFF;
+  }
+  
+  /* Navigation List Styles */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+
+/* About Section Styles */
+#about {
+ /* background-color: #f7f7f7; */
+  padding: 80px 0;
+  text-align: center;
+  min-height:100vh;
+}
+
+/* About Section Heading Styles */
+/* About Section Styles */
+.about_me_header {
+    margin-bottom: 0.5rem; /* Reduce the margin bottom value */
+    margin-top: 0; /* Remove the margin top value */
+  }
+  
+  .about_container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem
+  }
+  
+  .about_me_description{
+    font-size: 2.3rem;
+    align-items:center;
+    font-weight:Bold;
+    font-family: inherit;
+    margin-top: .5rem;
+  }
+
+  /* About Section Heading Styles 
+  #about h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* About Section Paragraph Styles 
+  
+*/
+  .page_headers{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    margin-top: 0;
+    font-size: 5rem;
+    margin-bottom: -1rem;
+  }
+  .page_headers::after {
+    content: '';
+    background:#fff !important
+}
+
+.page_headers::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    height: 5px;
+    width: 3rem;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+  .about__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem
+}
+.about__content-main{
+    text-align: center;
+}
+.about_content_title {
+    text-align:center; 
+    font-weight: 700;
+    font-size: 2.3rem;
+    display: inline-block; 
+}
+.about_content_details{
+    text-align:center;
+}
+h3{
+    text-align: center;
+}
+.about_content_para {
+    font-weight: 700;
+    margin: 0 3px;
+    text-align: left; /* Align paragraphs to the left */
+    margin-bottom: 1.5rem; /* Add a bottom margin for separation */
+    line-height: 1.6; /* Adjust line height for better readability */
+    margin-left: 1rem; /* Add left margin to align paragraphs more to the left */
+    max-width: 700px; /* Set a maximum width for the paragraphs */
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+.linkedin-link, .proj-link{
+    color:#555;
+    font-weight: bold;
+}
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.skills_skill {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+    background: rgba(153, 153, 153, .2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #666
+}
+
+  
+
